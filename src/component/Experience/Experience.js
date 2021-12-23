@@ -4,14 +4,9 @@ import { Container } from '../shared/Wrapper';
 import { SectionTitle } from '../shared/Typography';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
-import {
-	CardExperience,
-	DateList,
-	ExperienceComponent,
-	DetailList,
-} from './Experience.styled';
+import { DateList, ExperienceComponent, DetailList } from './Experience.styled';
 import { IconArrow } from '../shared/Icons';
-import { StyledCard } from '../Card/Card.styled';
+import { StyledCard } from '../shared/Card';
 
 const Experience = () => {
 	const cards = ExperienceArray.map((el, index) => (

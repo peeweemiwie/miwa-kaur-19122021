@@ -1,4 +1,4 @@
-import { StyledCard } from '../Card/Card.styled';
+import { StyledCard } from '../shared/Card';
 import { Container, Row } from '../shared/Wrapper';
 
 const NotFound = () => {

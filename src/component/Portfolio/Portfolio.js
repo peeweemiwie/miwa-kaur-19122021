@@ -4,7 +4,7 @@ import { Row, Container } from '../shared/Wrapper';
 import { AppArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
-import { CardTitle, StyledCard } from '../Card/Card.styled';
+import { CardTitle, StyledCard } from '../shared/Card';
 
 const Portfolio = () => {
 	const cards = AppArray.map((app, index) => (
