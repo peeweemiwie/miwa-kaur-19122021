@@ -4,8 +4,9 @@ export const darkTheme = {
 	text: Color.white,
 	pageBg: Color.darkGray,
 	headerBg: Color.navy,
+	cardBg: Color.cardBg,
 	imgSrc: './images/logo_white.svg',
-	shadow: Shadow.shadow5,
+	shadow: Shadow.shadow3,
 	switchBg: Color.primary,
 };
 
