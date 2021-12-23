@@ -1,20 +1,21 @@
-import { CardPortfolio } from './Portfolio.styled';
 import { FlexRow } from '../shared/Flex';
-import { SectionTitle, SectionSubTitle } from '../shared/Typography';
+import { SectionTitle } from '../shared/Typography';
 import { Row, Container } from '../shared/Wrapper';
 import { DesignArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
+import { CardTitle, StyledCard } from '../Card/Card.styled';
 
 const PortfolioDesign = () => {
 	const cards = DesignArray.map((el, index) => (
-		<CardPortfolio key={`portfolioDesign${index}`}>
-			<SectionSubTitle>{el.title}</SectionSubTitle>
+		<StyledCard key={`portfolioDesign${index}`}>
+			<CardTitle>{el.title}</CardTitle>
 			<Hr />
 			<figure>
 				<img src={`${el.img.url}`} alt={`${el.img.alt}`} />
 			</figure>
 			<Hr />
+			<h4>Technology used:</h4>
 			<KeywordList>
 				{el.keywords.map((word, i) => (
 					<li key={`word-design-${i}`}>{word}</li>
@@ -34,13 +35,13 @@ const PortfolioDesign = () => {
 					</a>
 				</p>
 			)}
-		</CardPortfolio>
+		</StyledCard>
 	));
 
 	return (
 		<Row>
 			<Container>
-				<SectionTitle>Portfolio - UI/UX design</SectionTitle>
+				<SectionTitle>Portfolio - UI/UX Design</SectionTitle>
 				<FlexRow gap='2rem'>{cards}</FlexRow>
 			</Container>
 		</Row>

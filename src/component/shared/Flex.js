@@ -7,8 +7,9 @@ export const FlexColumn = styled.div`
 
 export const FlexRow = styled.div`
 	display: flex;
-	flex-direction: row;
+	flex-wrap: ${(props) => (props.wrap ? props.wrap : 'nowrap')};
 	column-gap: ${(props) => (props.gap ? props.gap : 0)};
+	row-gap: ${(props) => (props.rowGap ? props.rowGap : 0)};
 	& > * {
 		flex: 1;
 	}

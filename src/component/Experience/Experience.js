@@ -11,10 +11,11 @@ import {
 	DetailList,
 } from './Experience.styled';
 import { IconArrow } from '../shared/Icons';
+import { StyledCard } from '../Card/Card.styled';
 
 const Experience = () => {
 	const cards = ExperienceArray.map((el, index) => (
-		<CardExperience key={`experience${index}`}>
+		<StyledCard key={`experience${index}`}>
 			<DateList>
 				<li>{el.dateStart}</li>
 				<li>{el.dateEnd}</li>
@@ -36,7 +37,7 @@ const Experience = () => {
 					<li key={`detail-${i}`}>{detail}</li>
 				))}
 			</DetailList>
-		</CardExperience>
+		</StyledCard>
 	));
 
 	return (

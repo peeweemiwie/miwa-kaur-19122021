@@ -1,9 +1,45 @@
 import styled from 'styled-components';
-import { Color } from '../variables';
-const { gray } = Color;
+import { Color, FontSize, BorderRadius } from '../variables';
+const { borderRadiusMd, borderRadiusXl } = BorderRadius;
+const { fontReg, fontLg } = FontSize;
+const { gray, white, lightGray, primary } = Color;
+export const CardTitle = styled.h4``;
 
-export const DefaultCard = styled.div`
+export const StyledCard = styled.div`
 	border: 1px solid ${gray};
-	color: white;
+	border-radius: ${borderRadiusMd};
+	color: ${white};
 	padding: 1.2rem;
+	min-width: ${({ minWidth }) => minWidth || 'auto'};
+	h4,
+	h5 {
+		font-size: ${fontReg};
+		margin: 0.5rem 0;
+	}
+	h4 {
+		font-weight: 500;
+	}
+	h5 {
+		font-weight: 300;
+	}
+	figure {
+		border: 3px solid ${lightGray};
+		border-radius: ${borderRadiusXl};
+		margin: 0;
+		overflow: hidden;
+		width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+
+	a {
+		color: ${primary};
+		font-size: ${fontReg};
+	}
+	${CardTitle} {
+		color: ${white};
+		font-size: ${fontLg};
+		font-weight: 400;
+	}
 `;

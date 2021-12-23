@@ -1,20 +1,21 @@
-import { CardPortfolio } from './Portfolio.styled';
 import { FlexRow } from '../shared/Flex';
-import { SectionTitle, SectionSubTitle } from '../shared/Typography';
+import { SectionTitle } from '../shared/Typography';
 import { Row, Container } from '../shared/Wrapper';
 import { AppArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
+import { CardTitle, StyledCard } from '../Card/Card.styled';
 
 const Portfolio = () => {
 	const cards = AppArray.map((app, index) => (
-		<CardPortfolio key={`portfolio${index}`}>
-			<SectionSubTitle>{app.title}</SectionSubTitle>
+		<StyledCard key={`portfolio${index}`}>
+			<CardTitle>{app.title}</CardTitle>
 			<Hr />
 			<figure>
 				<img src={`${app.img.url}`} alt={`${app.img.alt}`} />
 			</figure>
 			<Hr />
+			<h4>Technology used:</h4>
 			<KeywordList>
 				{app.keywords.map((word, i) => (
 					<li key={`word-${i}`}>{word}</li>
@@ -38,7 +39,7 @@ const Portfolio = () => {
 					</a>
 				</p>
 			)}
-		</CardPortfolio>
+		</StyledCard>
 	));
 
 	return (

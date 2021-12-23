@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import { FontFamily, FontSize } from '../variables';
 const { roboto, montserrat } = FontFamily;
-const { fontReg, fontMd, fontLg } = FontSize;
+const { fontReg } = FontSize;
 
 const GlobalStyles = createGlobalStyle`
 body {

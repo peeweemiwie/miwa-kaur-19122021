@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import { FontSize, Color, BorderRadius } from '../variables';
+import { FontFamily, FontSize, Color, BorderRadius } from '../variables';
 const { fontReg } = FontSize;
 const { gray } = Color;
-const { brXl } = BorderRadius;
+const { borderRadiusXl } = BorderRadius;
+const { robotoMono } = FontFamily;
 
 export const ListNoStyle = styled.ul`
 	list-style-type: none;
@@ -19,7 +20,8 @@ export const KeywordList = styled(ListFlexRow)`
 	flex-wrap: wrap;
 	li {
 		border: 1px solid ${gray};
-		border-radius: ${brXl};
+		border-radius: ${borderRadiusXl};
+		font-family: ${robotoMono};
 		font-size: ${fontReg};
 		margin: 0.2rem;
 		padding: 0.2rem 0.8rem;

@@ -32,8 +32,10 @@ export const FontSize = {
 	fontXs: Math.round(baseFontSize * 0.8 * 10) / 10 + 'rem',
 };
 
-export const Bp = {
-	sm: '768px',
+export const Breakpoints = {
+	breakpointSm: '576px',
+	breakpointMd: '768px',
+	breakpointXl: '1200px',
 };
 
 export const Shadow = {
@@ -51,9 +53,9 @@ export const Shadow = {
 
 const baseBorderRadius = 0.4;
 export const BorderRadius = {
-	brSm: baseBorderRadius + 'rem',
-	brMd: baseBorderRadius * 2 + 'rem',
-	brLg: baseBorderRadius * 3 + 'rem',
-	brXl: baseBorderRadius * 4 + 'rem',
-	brRound: '50%',
+	borderRadiusSm: baseBorderRadius + 'rem',
+	borderRadiusMd: baseBorderRadius * 2 + 'rem',
+	borderRadiusLg: baseBorderRadius * 3 + 'rem',
+	borderRadiusXl: baseBorderRadius * 4 + 'rem',
+	borderRadiusRound: '50%',
 };

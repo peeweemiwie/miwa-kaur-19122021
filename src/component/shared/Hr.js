@@ -7,7 +7,7 @@ const half = size / 2;
 export const Hr = styled.hr`
 	height: 1px;
 	border: 1px solid ${lightGray};
-	margin: 2.4rem auto;
+	margin: 3.2rem auto;
 	position: relative;
 	width: 80%;
 	overflow: visible; /* For IE */

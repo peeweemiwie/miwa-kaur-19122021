@@ -1,23 +1,30 @@
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from 'styled-components';
 import { darkTheme } from './component/theme';
 import Header from './component/Header/Header';
 import GlobalStyles from './component/shared/Global';
-import Experience from './component/Experience/Experience';
-import Portfolio from './component/Portfolio/Portfolio';
-import PortfolioDesign from './component/Portfolio/PortfolioDesign';
+import { StyledPage } from '../src/component/shared/Wrapper';
+import Home from '../src/component/Home/Home';
+import Footer from './component/Footer/Footer';
+import Email from './component/Email/Email';
+import NotFound from './component/NotFound/NotFound';
 
 function App() {
 	return (
 		<BrowserRouter>
 			<ThemeProvider theme={darkTheme}>
 				<GlobalStyles />
-				<>
+				<StyledPage>
 					<Header />
-					<Experience />
-					<Portfolio />
-					<PortfolioDesign />
-				</>
+					<main>
+						<Routes>
+							<Route path='/' element={<Home />} />
+							<Route path='contact' element={<Email />} />
+							<Route path='*' element={<NotFound />} />
+						</Routes>
+					</main>
+					<Footer />
+				</StyledPage>
 			</ThemeProvider>
 		</BrowserRouter>
 	);

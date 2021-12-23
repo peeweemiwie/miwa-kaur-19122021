@@ -10,7 +10,20 @@ export const Container = styled.div`
 
 export const Row = styled.div`
 	background-color: ${({ bg }) => bg || darkGray};
-	margin: 0;
+	margin: 0 0 5rem;
 	padding: 3rem 0;
-	width: 100%;
+	width: 100vw;
+`;
+
+export const Overflow = styled.div`
+	overflow: ${({ overflow }) => overflow || 'scroll'};
+`;
+
+export const StyledPage = styled.div`
+	background-color: ${({ theme }) => theme.pageBg};
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+	min-height: 100vh;
+	padding: 0 0 3rem;
 `;

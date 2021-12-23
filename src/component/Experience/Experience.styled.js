@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { Row } from '../shared/Wrapper';
-import { DefaultCard } from '../Card/Card.styled';
 import { ListFlexRow } from '../shared/Lists';
 import { FontSize, Color } from '../variables';
 const { fontMd, fontReg, fontLg } = FontSize;
@@ -41,20 +40,6 @@ export const DetailList = styled.ul`
 		}
 		&::first-letter {
 		}
-	}
-`;
-
-export const CardExperience = styled(DefaultCard)`
-	h4,
-	h5 {
-		font-size: ${fontReg};
-		margin: 0.5rem 0;
-	}
-	h4 {
-		font-weight: 500;
-	}
-	h5 {
-		font-weight: 300;
 	}
 `;
 
