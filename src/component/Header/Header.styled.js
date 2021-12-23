@@ -8,10 +8,14 @@ export const StyledHeader = styled(Row)`
 	background-color: ${({ theme }) => theme.pageBg};
 	padding: 3rem 0 0;
 	header {
-		align-items: end;
+		align-items: baseline;
 		display: grid;
 		grid-template-columns: 6rem auto auto;
 		gap: 2.4rem;
+	}
+	h1,
+	h2 {
+		font-weight: 300;
 	}
 	h1,
 	h2,
@@ -22,12 +26,11 @@ export const StyledHeader = styled(Row)`
 	h1 {
 		font-family: ${Quicksand};
 		font-size: 7rem;
-		font-weight: 300;
 	}
 
 	h2 {
 		font-size: ${fontMd};
-		font-weight: 300;
+		text-align: right;
 	}
 	p {
 		font-size: ${fontReg};
