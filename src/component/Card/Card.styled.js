@@ -2,12 +2,13 @@ import styled from 'styled-components';
 import { Color, FontSize, BorderRadius } from '../variables';
 const { borderRadiusMd, borderRadiusXl } = BorderRadius;
 const { fontReg, fontLg } = FontSize;
-const { gray, white, lightGray, primary } = Color;
+const { white, lightGray, primary } = Color;
 export const CardTitle = styled.h4``;
 
 export const StyledCard = styled.div`
-	border: 1px solid ${gray};
+	background-color: ${({ theme }) => theme.cardBg};
 	border-radius: ${borderRadiusMd};
+	box-shadow: ${({ theme }) => theme.shadow};
 	color: ${white};
 	padding: 1.2rem;
 	min-width: ${({ minWidth }) => minWidth || 'auto'};

@@ -19,6 +19,7 @@ export const Color = {
 	gray: '#414141',
 	lightGray: '#7a7a7a',
 	darkGray: '#202124',
+	cardBg: '#2b2b2b',
 	navy: '#031f41',
 };
 
