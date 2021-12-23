@@ -2,7 +2,7 @@ import { FlexRow } from '../shared/Flex';
 import { SectionTitle } from '../shared/Typography';
 import { Row, Container, Overflow } from '../shared/Wrapper';
 import { codepen } from '../../data/codepen';
-import { StyledCard } from '../Card/Card.styled';
+import { StyledCard } from '../shared/Card';
 
 const PortfolioDesign = () => {
 	const cards = codepen.map((el, index) => (
