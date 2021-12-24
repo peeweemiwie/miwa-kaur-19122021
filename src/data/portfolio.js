@@ -54,7 +54,7 @@ export const DesignArray = [
 			device: 'desktop',
 		},
 		link2: {
-			url: 'https://xd.adobe.com/view/98c4ce0b-353c-48d4-be92-68b4469a12d2-cd97/https://github.com/peeweemiwie/dictionary-3.0',
+			url: 'https://xd.adobe.com/view/98c4ce0b-353c-48d4-be92-68b4469a12d2-cd97/',
 			device: 'mobile',
 		},
 	},
@@ -66,7 +66,7 @@ export const DesignArray = [
 		},
 		keywords: ['Figma', 'Photoshop', 'Illustrator'],
 		link: {
-			link: 'https://www.figma.com/file/HzWjznkuqcqgxfW285O0EU/Chef-Recipe-App?node-id=0%3A1',
+			url: 'https://www.figma.com/file/HzWjznkuqcqgxfW285O0EU/Chef-Recipe-App?node-id=0%3A1',
 			device: 'mobile',
 		},
 	},
