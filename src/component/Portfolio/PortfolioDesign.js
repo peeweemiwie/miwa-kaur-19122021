@@ -5,9 +5,9 @@ import { DesignArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard } from '../shared/Card';
-import { AnchorButtonFilled } from '../shared/Buttons';
+import { AnchorButtonOutline } from '../shared/Buttons';
 import { Color } from '../variables';
-const { dark } = Color;
+const { primary } = Color;
 
 const PortfolioDesign = () => {
 	const cards = DesignArray.map((el, index) => (
@@ -26,23 +26,23 @@ const PortfolioDesign = () => {
 			</KeywordList>
 			<Hr />
 			<ButtonContainer>
-				<AnchorButtonFilled
-					to={`${el.link.url}`}
+				<AnchorButtonOutline
+					href={`${el.link.url}`}
 					target='_blank'
 					rel='noreferrer'
-					color={dark}
+					color={primary}
 				>
 					View the {el.link.device} design
-				</AnchorButtonFilled>
+				</AnchorButtonOutline>
 				{el.link2 && (
-					<AnchorButtonFilled
-						to={`${el.link2.url}`}
+					<AnchorButtonOutline
+						href={`${el.link2.url}`}
 						target='_blank'
 						rel='noreferrer'
-						color={dark}
+						color={primary}
 					>
 						View the {el.link2.device} design
-					</AnchorButtonFilled>
+					</AnchorButtonOutline>
 				)}
 			</ButtonContainer>
 		</StyledCard>
