@@ -6,7 +6,7 @@ import GlobalStyles from './component/shared/Global';
 import { StyledPage } from '../src/component/shared/Wrapper';
 import Home from '../src/component/Home/Home';
 import Footer from './component/Footer/Footer';
-import Email from './component/Email/Email';
+import Contact from './component/Contact/Contact';
 import NotFound from './component/NotFound/NotFound';
 
 function App() {
@@ -19,7 +19,7 @@ function App() {
 					<main>
 						<Routes>
 							<Route path='/' element={<Home />} />
-							<Route path='contact' element={<Email />} />
+							<Route path='contact' element={<Contact />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
 					</main>

@@ -1,6 +1,10 @@
+// import { Link } from 'react-router-dom';
 import { FlexRow } from '../shared/Flex';
-import { Container } from '../shared/Wrapper';
 import { StyledFooter } from './Footer.styled';
+import { LinkButtonFilled } from '../shared/Buttons';
+import { Container } from '../shared/Wrapper';
+import { Color } from '../variables';
+const { dark } = Color;
 
 const Footer = () => {
 	return (
@@ -9,7 +13,9 @@ const Footer = () => {
 				<FlexRow>
 					<div>Miwa Yagi Kaur</div>
 					<div>
-						<button>Contact Us</button>
+						<LinkButtonFilled color={dark} to='contact'>
+							Contact Us
+						</LinkButtonFilled>
 					</div>
 					<div>
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
