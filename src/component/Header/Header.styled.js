@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import { Row } from '../shared/Wrapper';
 import { FontSize, FontFamily } from '../variables';
-
-const { fontMd, fontReg } = FontSize;
+const { fontMd } = FontSize;
 const { Quicksand } = FontFamily;
+
 export const StyledHeader = styled(Row)`
 	background-color: ${({ theme }) => theme.pageBg};
 	padding: 3rem 0 0;
@@ -31,8 +31,5 @@ export const StyledHeader = styled(Row)`
 	h2 {
 		font-size: ${fontMd};
 		text-align: right;
-	}
-	p {
-		font-size: ${fontReg};
 	}
 `;

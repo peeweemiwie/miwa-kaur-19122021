@@ -5,12 +5,15 @@ const { fontReg, fontLg } = FontSize;
 const { white, lightGray } = Color;
 export const CardTitle = styled.h4``;
 
-export const StyledCard = styled.div`
+export const DefaultCard = styled.div`
 	background-color: ${({ theme }) => theme.cardBg};
 	border-radius: ${borderRadiusMd};
 	box-shadow: ${({ theme }) => theme.shadow};
 	color: ${white};
 	padding: 1.2rem;
+`;
+
+export const StyledCard = styled(DefaultCard)`
 	min-width: ${({ minWidth }) => minWidth || 'auto'};
 	h4,
 	h5 {

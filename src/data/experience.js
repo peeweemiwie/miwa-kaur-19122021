@@ -15,7 +15,7 @@ export const ExperienceArray = [
 			'inVision',
 		],
 		details: [
-			'Create and manage style guide',
+			'Create and maintain design system',
 			'UX/UI design, code presentation layers, prototype',
 			'Healthcare information management platforms',
 		],
@@ -34,7 +34,7 @@ export const ExperienceArray = [
 			'Responsive Web Design',
 		],
 		details: [
-			'Create and manage design system',
+			'Create and maintain design system',
 			// tslint:disable-next-line:max-line-length
 			'Code high fidelity prototype as well as production ready responsive website from sketch wireframe using HTML5, CSS3, Javascript',
 			'Test cross ­browser and device compatibility in Chrome, Firefox, Safari IE 8,9,10, 11, iPhone and android',

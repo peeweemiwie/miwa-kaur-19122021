@@ -36,12 +36,19 @@ export const ButtonOutline = styled(Button)`
 	border-color: ${({ borderColor }) => borderColor || primary};
 `;
 
+export const ButtonUnderline = styled(Button)`
+	text-decoration: underline;
+`;
+
 export const AnchorButtonOutline = styled(AnchorButton)`
 	border-color: ${({ borderColor }) => borderColor || primary};
 `;
 
 export const AnchorButtonFilled = styled(AnchorButtonOutline)`
 	background-color: ${({ bg }) => bg || primary};
+`;
+export const AnchorButtonUnderline = styled(AnchorButton)`
+	text-decoration: underline;
 `;
 
 export const LinkButtonFilled = styled(LinkButton)`
@@ -50,4 +57,8 @@ export const LinkButtonFilled = styled(LinkButton)`
 
 export const LinkButtonOutline = styled(LinkButton)`
 	border-color: ${({ borderColor }) => borderColor || primary};
+`;
+
+export const LinkButtonUnderline = styled(LinkButton)`
+	text-decoration: underline;
 `;

@@ -1,8 +1,10 @@
 import { FlexRow } from '../shared/Flex';
 import { SectionTitle } from '../shared/Typography';
-import { Row, Container, Overflow } from '../shared/Wrapper';
+import { Row, Container, Overflow, ButtonContainer } from '../shared/Wrapper';
 import { codepen } from '../../data/codepen';
 import { StyledCard } from '../shared/Card';
+import { AnchorButtonFilled } from '../shared/Buttons';
+import { Color } from '../variables';
 
 const PortfolioDesign = () => {
 	const cards = codepen.map((el, index) => (
@@ -38,6 +40,14 @@ const PortfolioDesign = () => {
 					{cards}
 				</FlexRow>
 			</Overflow>
+			<ButtonContainer justifyContent='center'>
+				<AnchorButtonFilled
+					to='https://codepen.io/peeweemiwie'
+					color={Color.dark}
+				>
+					View more from Codepen
+				</AnchorButtonFilled>
+			</ButtonContainer>
 		</Row>
 	);
 };

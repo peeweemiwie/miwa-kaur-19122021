@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Row } from '../shared/Wrapper';
 import { ListFlexRow } from '../shared/Lists';
 import { FontSize, Color } from '../variables';
 const { fontMd, fontReg, fontLg } = FontSize;
@@ -40,11 +39,5 @@ export const DetailList = styled.ul`
 		}
 		&::first-letter {
 		}
-	}
-`;
-
-export const ExperienceComponent = styled(Row)`
-	h3 {
-		margin-bottom: 3rem;
 	}
 `;
