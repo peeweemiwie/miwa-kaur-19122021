@@ -11,11 +11,6 @@ const Header = () => {
 					<h1>Miwa Yagi Kaur</h1>
 					<h2>Design Technologist</h2>
 				</header>
-				<p>
-					Hello there! My name is Miwa. Lorem ipsum dolor sit amet consectetur
-					adipisicing elit. Natus itaque maiores nesciunt modi quos quibusdam
-					incidunt excepturi aut consectetur officiis.
-				</p>
 			</Container>
 		</StyledHeader>
 	);

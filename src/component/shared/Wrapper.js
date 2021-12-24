@@ -17,6 +17,7 @@ export const Row = styled.div`
 
 export const Overflow = styled.div`
 	overflow: ${({ overflow }) => overflow || 'scroll'};
+	margin-bottom: 3rem;
 `;
 
 export const StyledPage = styled.div`
@@ -31,6 +32,7 @@ export const StyledPage = styled.div`
 export const ButtonContainer = styled.div`
 	display: flex;
 	column-gap: ${({ cGap }) => cGap || '0.8rem'};
+	justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};
 	row-gap: ${({ cGap }) => cGap || '0.8rem'};
 	margin-bottom: 1.6rem;
 `;

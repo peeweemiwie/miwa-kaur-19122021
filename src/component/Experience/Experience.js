@@ -1,10 +1,11 @@
 import { FlexRow } from '../shared/Flex';
+import { Row } from '../shared/Wrapper';
 import { ExperienceArray } from '../../data/experience';
 import { Container } from '../shared/Wrapper';
 import { SectionTitle } from '../shared/Typography';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
-import { DateList, ExperienceComponent, DetailList } from './Experience.styled';
+import { DateList, DetailList } from './Experience.styled';
 import { IconArrow } from '../shared/Icons';
 import { StyledCard } from '../shared/Card';
 
@@ -36,12 +37,12 @@ const Experience = () => {
 	));
 
 	return (
-		<ExperienceComponent>
+		<Row>
 			<Container>
 				<SectionTitle>Experience</SectionTitle>
 				<FlexRow gap='2rem'>{cards}</FlexRow>
 			</Container>
-		</ExperienceComponent>
+		</Row>
 	);
 };
 

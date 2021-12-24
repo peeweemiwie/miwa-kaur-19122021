@@ -5,5 +5,6 @@ const { lightGray } = Color;
 export const SectionTitle = styled.h3`
 	color: ${lightGray};
 	font-size: 6rem;
+	margin-bottom: 2rem;
 	text-align: right;
 `;
