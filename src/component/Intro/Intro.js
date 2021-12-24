@@ -41,7 +41,7 @@ const Intro = () => {
 							</figure>
 						</FlexRow>
 						<Hr />
-						<p>Here are some of the technologies I use:</p>
+						<p>Here are some of the technologies I use lately:</p>
 						<KeywordList>{keywords}</KeywordList>
 						<Hr />
 						<ButtonContainer justifyContent='center'>
