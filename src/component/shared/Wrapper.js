@@ -27,3 +27,10 @@ export const StyledPage = styled.div`
 	min-height: 100vh;
 	padding: 0 0 3rem;
 `;
+
+export const ButtonContainer = styled.div`
+	display: flex;
+	column-gap: ${({ cGap }) => cGap || '0.8rem'};
+	row-gap: ${({ cGap }) => cGap || '0.8rem'};
+	margin-bottom: 1.6rem;
+`;

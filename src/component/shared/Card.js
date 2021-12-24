@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Color, FontSize, BorderRadius } from '../variables';
 const { borderRadiusMd, borderRadiusXl } = BorderRadius;
 const { fontReg, fontLg } = FontSize;
-const { white, lightGray, primary } = Color;
+const { white, lightGray } = Color;
 export const CardTitle = styled.h4``;
 
 export const StyledCard = styled.div`
@@ -32,11 +32,6 @@ export const StyledCard = styled.div`
 		img {
 			max-width: 100%;
 		}
-	}
-
-	a {
-		color: ${primary};
-		font-size: ${fontReg};
 	}
 	${CardTitle} {
 		color: ${white};

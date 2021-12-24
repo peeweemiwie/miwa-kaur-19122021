@@ -1,10 +1,13 @@
 import { FlexRow } from '../shared/Flex';
 import { SectionTitle } from '../shared/Typography';
-import { Row, Container } from '../shared/Wrapper';
+import { Row, Container, ButtonContainer } from '../shared/Wrapper';
 import { AppArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard } from '../shared/Card';
+import { AnchorButtonFilled, AnchorButtonOutline } from '../shared/Buttons';
+import { Color } from '../variables';
+const { primary, dark } = Color;
 
 const Portfolio = () => {
 	const cards = AppArray.map((app, index) => (
@@ -22,23 +25,36 @@ const Portfolio = () => {
 				))}
 			</KeywordList>
 			<Hr />
-			<p>
-				<a href={`${app.link}`} target='_blank' rel='noreferrer'>
+			<ButtonContainer>
+				<AnchorButtonFilled
+					href={`${app.link}`}
+					target='_blank'
+					rel='noreferrer'
+					color={dark}
+				>
 					View the project
-				</a>
-			</p>
-			<p>
-				<a href={`${app.github}`} target='_blank' rel='noreferrer'>
+				</AnchorButtonFilled>
+			</ButtonContainer>
+			<ButtonContainer>
+				<AnchorButtonOutline
+					href={`${app.github}`}
+					target='_blank'
+					rel='noreferrer'
+					color={primary}
+				>
 					View GitHub repo
-				</a>
-			</p>
-			{app.figma && (
-				<p>
-					<a href={`${app.figma}`} target='_blank' rel='noreferrer'>
+				</AnchorButtonOutline>
+				{app.figma && (
+					<AnchorButtonOutline
+						href={`${app.figma}`}
+						target='_blank'
+						rel='noreferrer'
+						color={primary}
+					>
 						View Figma
-					</a>
-				</p>
-			)}
+					</AnchorButtonOutline>
+				)}
+			</ButtonContainer>
 		</StyledCard>
 	));
 
