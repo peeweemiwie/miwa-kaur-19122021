@@ -29,7 +29,7 @@ const Contact = () => {
 							src='https://docs.google.com/forms/d/e/1FAIpQLSdxwkhOFCFE3DOQVwkHLi86nzDj4_hM1OkpKoE_beGGmMcGZg/viewform?embedded=true'
 							width='400'
 							height='845'
-							frameborder='0'
+							frameBorder='0'
 							marginHeight='0'
 							marginWidth='0'
 							title='Email us - mobile version'
