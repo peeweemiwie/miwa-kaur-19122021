@@ -1,4 +1,3 @@
-// import { Link } from 'react-router-dom';
 import { FlexRow } from '../shared/Flex';
 import { StyledFooter } from './Footer.styled';
 import { LinkButtonFilled } from '../shared/Buttons';
