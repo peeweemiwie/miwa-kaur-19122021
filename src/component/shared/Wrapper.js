@@ -26,10 +26,11 @@ export const StyledPage = styled.div`
 	flex-direction: column;
 	margin: 0;
 	min-height: 100vh;
-	padding: 0 0 3rem;
+	padding: 0;
 `;
 
 export const ButtonContainer = styled.div`
+	align-items: ${({ alignItems }) => alignItems || 'normal'};
 	display: flex;
 	column-gap: ${({ cGap }) => cGap || '0.8rem'};
 	justify-content: ${({ justifyContent }) => justifyContent || 'flex-start'};

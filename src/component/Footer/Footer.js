@@ -1,27 +1,70 @@
+import {
+	FaGithub,
+	FaLinkedin,
+	FaYoutube,
+	FaInstagram,
+	FaRegEnvelope,
+} from 'react-icons/fa';
 import { FlexRow } from '../shared/Flex';
-import { StyledFooter } from './Footer.styled';
-import { LinkButtonFilled } from '../shared/Buttons';
-import { Container } from '../shared/Wrapper';
+import { MediaLinks, StyledFooter } from './Footer.styled';
+import { AnchorButton, LinkButtonUnderline } from '../shared/Buttons';
+import { Container, ButtonContainer } from '../shared/Wrapper';
 import { Color } from '../variables';
-const { dark } = Color;
+const { primary } = Color;
 
 const Footer = () => {
 	return (
 		<StyledFooter>
 			<Container>
 				<FlexRow>
-					<div>Miwa Yagi Kaur</div>
+					<MediaLinks>
+						<ButtonContainer justifyContent='flex-end'>
+							<AnchorButton
+								href='https://github.com/peeweemiwie/miwa-kaur-19122021'
+								target='_blank'
+								rel='noreferrer'
+								color={primary}
+							>
+								<FaGithub />
+							</AnchorButton>
+							<AnchorButton
+								href='https://www.linkedin.com/in/miwayagi/'
+								target='_blank'
+								rel='noreferrer'
+								color={primary}
+							>
+								<FaLinkedin />
+							</AnchorButton>
+							<AnchorButton
+								href='https://www.youtube.com/channel/UCYgA0xoTDkBGKDKRevWIweA'
+								target='_blank'
+								rel='noreferrer'
+								color={primary}
+							>
+								<FaYoutube />
+							</AnchorButton>
+							<AnchorButton
+								href='https://www.instagram.com/miwakaurskitchen/'
+								target='_blank'
+								rel='noreferrer'
+								color={primary}
+							>
+								<FaInstagram />
+							</AnchorButton>
+						</ButtonContainer>
+					</MediaLinks>
 					<div>
-						<LinkButtonFilled color={dark} to='contact'>
-							Contact Us
-						</LinkButtonFilled>
-					</div>
-					<div>
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam
-						facilis excepturi similique illo harum mollitia dicta ut autem,
-						quaerat sunt.
+						Would you like to find out more about Miwa? <br />
+						Feel free to
+						<LinkButtonUnderline color={primary} to='contact'>
+							<ButtonContainer alignItems='flex-end'>
+								<FaRegEnvelope />
+								Contact Us
+							</ButtonContainer>
+						</LinkButtonUnderline>
 					</div>
 				</FlexRow>
+				<small>Miwa Yagi Kaur - All rights reserved 2022</small>
 			</Container>
 		</StyledFooter>
 	);

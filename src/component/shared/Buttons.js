@@ -16,6 +16,7 @@ const sharedStyle = css`
 	padding: 0.2rem 1.6rem;
 	text-decoration: none;
 `;
+
 export const Button = styled.button`
 	${sharedStyle}
 `;
