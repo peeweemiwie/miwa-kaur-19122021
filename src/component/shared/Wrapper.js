@@ -10,9 +10,9 @@ export const Container = styled.div`
 
 export const Row = styled.div`
 	background-color: ${({ bg }) => bg || darkGray};
-	margin: 0 0 5rem;
+	margin: 0 auto 5rem;
 	padding: 3rem 0;
-	width: 100vw;
+	width: 96vw;
 `;
 
 export const Overflow = styled.div`

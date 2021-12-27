@@ -16,7 +16,7 @@ export const Hr = styled.hr`
 		content: '';
 		height: ${size}px;
 		width: ${size}px;
-		background-color: ${primary};
+		background-color: ${({ bgColor }) => bgColor || primary};
 		border-radius: 50%;
 		display: block;
 		position: absolute;

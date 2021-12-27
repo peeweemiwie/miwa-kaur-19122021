@@ -11,7 +11,7 @@ import { ButtonUnderline, LinkButtonOutline } from '../shared/Buttons';
 import { Hr } from '../shared/Hr';
 import { DefaultCard } from '../shared/Card';
 import { Color } from '../variables';
-const { primary } = Color;
+const { primary, accent } = Color;
 
 const Intro = () => {
 	const [readMore, setReadMore] = useState(true);
@@ -40,10 +40,10 @@ const Intro = () => {
 								<img src={Img} alt='Miwa Kaur' />
 							</figure>
 						</FlexRow>
-						<Hr />
+						<Hr bgColor={accent} />
 						<p>Here are some of the technologies I use lately:</p>
 						<KeywordList>{keywords}</KeywordList>
-						<Hr />
+						<Hr bgColor={accent} />
 						<ButtonContainer justifyContent='center'>
 							<LinkButtonOutline to='contact' color={primary}>
 								Contact

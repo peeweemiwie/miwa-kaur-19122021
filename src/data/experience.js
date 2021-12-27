@@ -1,5 +1,27 @@
 export const ExperienceArray = [
 	{
+		dateStart: '1/2019',
+		dateEnd: 'Present',
+		title: 'Front-end developer',
+		company: 'Freelance',
+		keywords: [
+			'HTML5',
+			'CSS3/SCSS',
+			'Javascript',
+			'React.js',
+			'Sketch',
+			'inVision',
+			'WordPress',
+			'Google Maps',
+			'Webflow',
+			'Typeform',
+		],
+		details: [
+			'Design, build and maintain responsive WordPress sites and widgets with HTML, CSS and Javascript',
+			'Prototype with visual builder such as Webflow and Elementor for WordPress',
+		],
+	},
+	{
 		dateStart: '11/2016',
 		dateEnd: '12/2018',
 		title: 'Design Technologist',
@@ -18,6 +40,22 @@ export const ExperienceArray = [
 			'Create and maintain design system',
 			'UX/UI design, code presentation layers, prototype',
 			'Healthcare information management platforms',
+		],
+	},
+	{
+		dateStart: '9/2016',
+		dateEnd: '11/2016',
+		title: 'Contract Frontend Developer',
+		company: 'National Geographic',
+		keywords: ['Handlebars.js', 'HTML5', 'CSS3/SCSS', 'JavaScript', 'RWD'],
+		details: [
+			'Working closely with PM, UI/UX designers and editors I created an aesthetically pleasing responsive and cross-devise webpage',
+		],
+		projects: [
+			{
+				link: 'http://www.nationalgeographic.com/travel/features/best-trips-2017',
+				title: 'Best Trips 2017',
+			},
 		],
 	},
 	{
