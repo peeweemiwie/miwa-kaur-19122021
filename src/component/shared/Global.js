@@ -1,11 +1,13 @@
 import { createGlobalStyle } from 'styled-components';
-import { FontFamily, FontSize } from '../variables';
+import { FontFamily, FontSize, Color } from '../variables';
 const { roboto, montserrat } = FontFamily;
 const { fontReg } = FontSize;
+const { darkGray } = Color;
 
 const GlobalStyles = createGlobalStyle`
 body {
-  margin: 0;
+  background-color: ${darkGray};
+  margin: 0 auto;
 }
   html {
 	  font-family: ${roboto};

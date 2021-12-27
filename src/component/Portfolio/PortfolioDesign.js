@@ -7,24 +7,24 @@ import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard } from '../shared/Card';
 import { AnchorButtonOutline } from '../shared/Buttons';
 import { Color } from '../variables';
-const { primary } = Color;
+const { primary, accent } = Color;
 
 const PortfolioDesign = () => {
 	const cards = DesignArray.map((el, index) => (
 		<StyledCard key={`portfolioDesign${index}`}>
 			<CardTitle>{el.title}</CardTitle>
-			<Hr />
+			<Hr bgColor={accent} />
 			<figure>
 				<img src={`${el.img.url}`} alt={`${el.img.alt}`} />
 			</figure>
-			<Hr />
+			<Hr bgColor={accent} />
 			<h4>Technology used:</h4>
 			<KeywordList>
 				{el.keywords.map((word, i) => (
 					<li key={`word-design-${i}`}>{word}</li>
 				))}
 			</KeywordList>
-			<Hr />
+			<Hr bgColor={accent} />
 			<ButtonContainer>
 				<AnchorButtonOutline
 					href={`${el.link.url}`}
