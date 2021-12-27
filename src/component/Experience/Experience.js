@@ -51,7 +51,7 @@ const Experience = () => {
 					<CardTitle>Summary</CardTitle>
 					<DetailList>
 						<li>
-							Experienced front end developer with <stron>UI/UX</stron> and{' '}
+							Experienced front end developer with <strong>UI/UX</strong> and{' '}
 							<strong>Responsive Web Design</strong>
 						</li>
 						<li>

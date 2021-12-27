@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { FontFamily, FontSize, Color, BorderRadius } from '../variables';
 const { fontReg } = FontSize;
-const { gray, accent } = Color;
+const { gray } = Color;
 const { borderRadiusXl } = BorderRadius;
 const { robotoMono } = FontFamily;
 

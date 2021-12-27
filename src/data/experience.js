@@ -53,7 +53,6 @@ export const ExperienceArray = [
 		],
 		projects: [
 			{
-				link: 'http://www.nationalgeographic.com/travel/features/best-trips-2017',
 				title: 'Best Trips 2017',
 			},
 		],
