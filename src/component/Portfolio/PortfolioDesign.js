@@ -32,7 +32,7 @@ const PortfolioDesign = () => {
 					rel='noreferrer'
 					color={primary}
 				>
-					View the {el.link.device} design
+					View {el.link.device} design
 				</AnchorButtonOutline>
 				{el.link2 && (
 					<AnchorButtonOutline
@@ -41,7 +41,7 @@ const PortfolioDesign = () => {
 						rel='noreferrer'
 						color={primary}
 					>
-						View the {el.link2.device} design
+						View {el.link2.device} design
 					</AnchorButtonOutline>
 				)}
 			</ButtonContainer>

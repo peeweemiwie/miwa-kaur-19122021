@@ -1,5 +1,4 @@
 tasks:
-- trim recipe app screenshot & change title to cookbook
 - change li font-weight to 200
 - button hover state
 - intro - align photo with text

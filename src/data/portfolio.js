@@ -2,7 +2,7 @@ export const AppArray = [
 	{
 		title: 'Dictionary',
 		img: {
-			url: './images/app-dictionary.png',
+			url: './images/A-dictionary.jpg',
 			alt: 'screenshot of dictionary app',
 		},
 		keywords: [
@@ -23,7 +23,7 @@ export const AppArray = [
 	{
 		title: 'Weather',
 		img: {
-			url: './images/app-weather.png',
+			url: './images/A-weatherApp.jpg',
 			alt: 'screenshot of weather app',
 		},
 		keywords: [
@@ -45,7 +45,7 @@ export const DesignArray = [
 	{
 		title: 'E-commerce',
 		img: {
-			url: './images/design-ecommerce.png',
+			url: './images/D-MagnoliaDesktop.jpg',
 			alt: 'screenshot of e-commerce design',
 		},
 		keywords: ['Adobe XD', 'Photoshop', 'Illustrator', 'RWD'],
@@ -59,10 +59,10 @@ export const DesignArray = [
 		},
 	},
 	{
-		title: 'Recipes Mobile App',
+		title: 'Cookbook Mobile App',
 		img: {
-			url: './images/design-cookbook.png',
-			alt: 'screenshot of recipes mobile app',
+			url: './images/D-cookbook.jpg',
+			alt: 'screenshot of cookbook mobile app',
 		},
 		keywords: ['Figma', 'Photoshop', 'Illustrator'],
 		link: {
