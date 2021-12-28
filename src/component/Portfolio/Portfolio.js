@@ -32,7 +32,7 @@ const Portfolio = () => {
 					rel='noreferrer'
 					color={dark}
 				>
-					View the project
+					View project
 				</AnchorButtonFilled>
 			</ButtonContainer>
 			<ButtonContainer>
