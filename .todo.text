@@ -1,6 +1,3 @@
-
-
 stories:
 - mobile display
 - intersection observer
-- button hover state
