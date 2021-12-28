@@ -7,7 +7,7 @@ const { accent } = Color;
 export const DateList = styled(ListFlexRow)`
 	justify-content: space-between;
 	position: relative;
-	.icon {
+	svg {
 		color: ${accent};
 		font-size: ${fontLg};
 		position: absolute;

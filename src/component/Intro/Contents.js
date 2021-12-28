@@ -39,9 +39,9 @@ export const MoreContent = () => {
 	return (
 		<>
 			<p>
-				Anyway when I'm not coding, there are a lot of things that I enjoy. As I
-				mentioned earlier, I am an avid home cook. In fact I started a Youtube
-				channel called
+				<strong>In my free time</strong>, there are a lot of things that I
+				enjoy. As I mentioned earlier, I am an avid home cook. In fact I started
+				a <strong>Youtube channel</strong> called
 				<AnchorButtonUnderline
 					href='https://www.youtube.com/channel/UCYgA0xoTDkBGKDKRevWIweA'
 					color={primary}

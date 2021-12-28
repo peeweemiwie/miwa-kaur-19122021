@@ -1,9 +1,6 @@
-tasks:
-- change li font-weight to 200
-- button hover state
-- intro - align photo with text
-- summary - change text Experienced front end developer to Experienced front end developer / Design Technologist
+
 
 stories:
 - mobile display
 - intersection observer
+- button hover state
