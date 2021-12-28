@@ -15,6 +15,13 @@ const sharedStyle = css`
 	display: inline-flex;
 	padding: 0.2rem 1.6rem;
 	text-decoration: none;
+	transition: box-shadow 200ms ease-in-out, transform 200ms ease-in-out,
+		filter 200ms ease-in-out;
+	&:hover {
+		transform: scale(1.05);
+		box-shadow: ${({ theme }) => theme.shadow};
+		filter: brightness(2);
+	}
 `;
 
 export const Button = styled.button`
