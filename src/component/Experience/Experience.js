@@ -1,3 +1,4 @@
+import { MdArrowBack } from 'react-icons/md';
 import { FlexRow } from '../shared/Flex';
 import { Container, Row, ButtonContainer } from '../shared/Wrapper';
 import { ExperienceArray } from '../../data/experience';
@@ -5,7 +6,6 @@ import { SectionTitle } from '../shared/Typography';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
 import { DateList, DetailList } from './Experience.styled';
-import { IconArrow } from '../shared/Icons';
 import { CardTitle, StyledCard } from '../shared/Card';
 import { AnchorButtonOutline } from '../shared/Buttons';
 import { Color } from '../variables';
@@ -15,9 +15,9 @@ const Experience = () => {
 	const cards = ExperienceArray.map((el, index) => (
 		<StyledCard key={`experience${index}`}>
 			<DateList>
-				<li>{el.dateStart}</li>
 				<li>{el.dateEnd}</li>
-				<IconArrow />
+				<li>{el.dateStart}</li>
+				<MdArrowBack />
 			</DateList>
 			<Hr />
 			<h4>{el.title}</h4>
@@ -51,7 +51,8 @@ const Experience = () => {
 					<CardTitle>Summary</CardTitle>
 					<DetailList>
 						<li>
-							Experienced front end developer with <strong>UI/UX</strong> and{' '}
+							Experienced <strong>design technologist</strong> / front end
+							developer with <strong>UI/UX</strong> and{' '}
 							<strong>Responsive Web Design</strong>
 						</li>
 						<li>
@@ -75,7 +76,7 @@ const Experience = () => {
 							rel='noreferrer'
 							color={primary}
 						>
-							View the resume
+							View resume
 						</AnchorButtonOutline>
 					</ButtonContainer>
 				</StyledCard>

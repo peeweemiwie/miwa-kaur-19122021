@@ -11,6 +11,9 @@ export const DefaultCard = styled.div`
 	box-shadow: ${({ theme }) => theme.shadow};
 	color: ${white};
 	padding: 1.2rem;
+	li {
+		font-weight: 200;
+	}
 `;
 
 export const StyledCard = styled(DefaultCard)`
