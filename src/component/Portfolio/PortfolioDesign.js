@@ -1,4 +1,3 @@
-import { FlexRow } from '../shared/Flex';
 import { SectionTitle } from '../shared/Typography';
 import { Row, Container, ButtonContainer } from '../shared/Wrapper';
 import { DesignArray } from '../../data/portfolio';
@@ -7,6 +6,7 @@ import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard } from '../shared/Card';
 import { AnchorButtonOutline } from '../shared/Buttons';
 import { Color } from '../variables';
+import { Grid } from '../shared/Grid';
 const { primary, accent } = Color;
 
 const PortfolioDesign = () => {
@@ -52,7 +52,7 @@ const PortfolioDesign = () => {
 		<Row>
 			<Container>
 				<SectionTitle>Portfolio - UI/UX Design</SectionTitle>
-				<FlexRow gap='2rem'>{cards}</FlexRow>
+				<Grid gap='2rem'>{cards}</Grid>
 			</Container>
 		</Row>
 	);

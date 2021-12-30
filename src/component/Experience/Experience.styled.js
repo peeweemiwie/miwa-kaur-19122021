@@ -37,7 +37,5 @@ export const DetailList = styled.ul`
 			left: -16px;
 			top: -6px;
 		}
-		&::first-letter {
-		}
 	}
 `;

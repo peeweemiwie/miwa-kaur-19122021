@@ -1,4 +1,4 @@
-import { FlexRow } from '../shared/Flex';
+import { Grid } from '../shared/Grid';
 import { SectionTitle } from '../shared/Typography';
 import { Row, Container, ButtonContainer } from '../shared/Wrapper';
 import { AppArray } from '../../data/portfolio';
@@ -62,7 +62,7 @@ const Portfolio = () => {
 		<Row>
 			<Container>
 				<SectionTitle>Portfolio - React Apps</SectionTitle>
-				<FlexRow gap='2rem'>{cards}</FlexRow>
+				<Grid>{cards}</Grid>
 			</Container>
 		</Row>
 	);

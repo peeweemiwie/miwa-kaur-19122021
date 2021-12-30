@@ -1,10 +1,10 @@
-import { FlexRow } from '../shared/Flex';
 import { SectionTitle } from '../shared/Typography';
 import { Row, Container, Overflow, ButtonContainer } from '../shared/Wrapper';
 import { codepen } from '../../data/codepen';
 import { StyledCard } from '../shared/Card';
 import { AnchorButtonOutline } from '../shared/Buttons';
 import { Color } from '../variables';
+import { Grid } from '../shared/Grid';
 
 const PortfolioDesign = () => {
 	const cards = codepen.map((el, index) => (
@@ -36,9 +36,9 @@ const PortfolioDesign = () => {
 				<SectionTitle>Portfolio - Creative Coding</SectionTitle>
 			</Container>
 			<Overflow>
-				<FlexRow gap='2rem' rowGap='2rem'>
+				<Grid gap='2rem' rowGap='2rem'>
 					{cards}
-				</FlexRow>
+				</Grid>
 			</Overflow>
 			<ButtonContainer justifyContent='center'>
 				<AnchorButtonOutline

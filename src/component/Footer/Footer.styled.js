@@ -9,6 +9,8 @@ export const StyledFooter = styled.footer`
 	font-size: ${fontReg};
 	margin-top: auto;
 	padding: 3rem 0;
+	text-align: center;
+	width: 100vw;
 	small {
 		display: block;
 		text-align: center;

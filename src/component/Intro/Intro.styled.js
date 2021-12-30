@@ -12,7 +12,7 @@ export const StyledIntro = styled.div`
 	figure {
 		margin: 2rem 0 0;
 		overflow: hidden;
-		max-width: 25rem;
+		width: 100%;
 		img {
 			max-width: 100%;
 		}

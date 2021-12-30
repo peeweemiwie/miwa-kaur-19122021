@@ -50,11 +50,7 @@ export const ExperienceArray = [
 		keywords: ['Handlebars.js', 'HTML5', 'CSS3/SCSS', 'JavaScript', 'RWD'],
 		details: [
 			'Working closely with PM, UI/UX designers and editors I created an aesthetically pleasing responsive and cross-devise webpage',
-		],
-		projects: [
-			{
-				title: 'Best Trips 2017',
-			},
+			'Project name: Best Trips 2017',
 		],
 	},
 	{

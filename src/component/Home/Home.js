@@ -1,7 +1,6 @@
 import Experience from '../Experience/Experience';
 import Portfolio from '../Portfolio/Portfolio';
 import PortfolioDesign from '../Portfolio/PortfolioDesign';
-import PortfolioCodepen from '../Portfolio/PortfolioCodepen';
 import Intro from '../Intro/Intro';
 const Home = () => {
 	return (
@@ -10,7 +9,6 @@ const Home = () => {
 			<Experience />
 			<Portfolio />
 			<PortfolioDesign />
-			<PortfolioCodepen />
 		</>
 	);
 };
