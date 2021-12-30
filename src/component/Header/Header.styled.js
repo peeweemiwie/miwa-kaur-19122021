@@ -1,13 +1,23 @@
 import styled from 'styled-components';
 import { Row } from '../shared/Wrapper';
-import { FontSize, FontFamily } from '../variables';
+import { FontSize, FontFamily, Breakpoints } from '../variables';
 const { fontMd } = FontSize;
 const { Quicksand } = FontFamily;
+const { breakpointMd } = Breakpoints;
+
+export const StyledLogo = styled.img`
+	grid-area: logo;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	transform: translate(1.6rem, -50%);
+	width: max(5vw, 6rem);
+`;
 
 export const StyledHeader = styled(Row)`
 	background-color: ${({ theme }) => theme.cardBg};
 	margin: 0 auto;
-	padding: 3rem 0;
+	padding: 1rem 0;
 	position: relative;
 	width: 100vw;
 	&::after {
@@ -26,28 +36,28 @@ export const StyledHeader = styled(Row)`
 		);
 	}
 	header {
-		align-items: baseline;
 		display: grid;
-		grid-template-columns: 6rem auto auto;
-		gap: 2.4rem;
+		grid-template-areas: 'logo header1' 'logo header2';
+		grid-template-columns: 11rem 1fr;
+		position: relative;
+		@media (min-width: ${breakpointMd}) {
+			grid-template-columns: 14rem 1fr;
+		}
 	}
 	h1,
 	h2 {
-		font-weight: 300;
-	}
-	h1,
-	h2,
-	p {
 		color: ${({ theme }) => theme.text};
+		font-weight: 300;
 	}
 
 	h1 {
 		font-family: ${Quicksand};
-		font-size: 7rem;
+		font-size: clamp(4rem, 5vw, 7rem);
+		grid-area: header1;
 	}
 
 	h2 {
 		font-size: ${fontMd};
-		text-align: right;
+		grid-area: header2;
 	}
 `;

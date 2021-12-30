@@ -23,7 +23,8 @@ export const Overflow = styled.div`
 export const StyledPage = styled.div`
 	background-color: ${({ theme }) => theme.pageBg};
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	margin: 0;
 	min-height: 100vh;
 	padding: 0;

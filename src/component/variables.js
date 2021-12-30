@@ -25,6 +25,7 @@ export const Color = {
 
 const baseFontSize = 1.6;
 export const FontSize = {
+	fontXxl: baseFontSize * 4 + 'rem',
 	fontXl: baseFontSize * 3 + 'rem',
 	fontLg: baseFontSize * 2 + 'rem',
 	fontMd: Math.round(baseFontSize * 1.5 * 10) / 10 + 'rem',

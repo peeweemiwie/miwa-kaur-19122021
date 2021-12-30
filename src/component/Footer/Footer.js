@@ -5,7 +5,7 @@ import {
 	FaInstagram,
 	FaRegEnvelope,
 } from 'react-icons/fa';
-import { FlexRow } from '../shared/Flex';
+import { Grid } from '../shared/Grid';
 import { MediaLinks, StyledFooter } from './Footer.styled';
 import { AnchorButton, LinkButtonUnderline } from '../shared/Buttons';
 import { Container, ButtonContainer } from '../shared/Wrapper';
@@ -16,9 +16,9 @@ const Footer = () => {
 	return (
 		<StyledFooter>
 			<Container>
-				<FlexRow>
+				<Grid>
 					<MediaLinks>
-						<ButtonContainer justifyContent='flex-end'>
+						<ButtonContainer justifyContent='center'>
 							<AnchorButton
 								href='https://github.com/peeweemiwie/miwa-kaur-19122021'
 								target='_blank'
@@ -63,7 +63,7 @@ const Footer = () => {
 							</ButtonContainer>
 						</LinkButtonUnderline>
 					</div>
-				</FlexRow>
+				</Grid>
 				<small>Miwa Yagi Kaur - All rights reserved 2022</small>
 			</Container>
 		</StyledFooter>

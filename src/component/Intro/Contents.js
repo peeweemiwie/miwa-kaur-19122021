@@ -3,7 +3,7 @@ import { Color } from '../variables';
 const { primary } = Color;
 export const InitialContent = () => {
 	return (
-		<>
+		<div>
 			<p>
 				Hi there! Thanks for visiting my site. My name is Miwa. I am a design
 				technologist by trade and an avid home cook in my free time.
@@ -32,12 +32,12 @@ export const InitialContent = () => {
 				It not only improves user experience and interface but also we can code
 				more efficiently.
 			</p>
-		</>
+		</div>
 	);
 };
 export const MoreContent = () => {
 	return (
-		<>
+		<div>
 			<p>
 				<strong>In my free time</strong>, there are a lot of things that I
 				enjoy. As I mentioned earlier, I am an avid home cook. In fact I started
@@ -73,6 +73,6 @@ export const MoreContent = () => {
 					contact form.
 				</LinkButtonUnderline>
 			</p>
-		</>
+		</div>
 	);
 };

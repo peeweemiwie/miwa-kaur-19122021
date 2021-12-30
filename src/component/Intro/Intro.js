@@ -6,11 +6,11 @@ import { ButtonContainer, Container, Row } from '../shared/Wrapper';
 import { SectionTitle } from '../shared/Typography';
 import { keywordsArray } from '../../data/keywords';
 import { KeywordList } from '../shared/Lists';
-import { FlexRow } from '../shared/Flex';
 import { ButtonUnderline, LinkButtonOutline } from '../shared/Buttons';
 import { Hr } from '../shared/Hr';
 import { DefaultCard } from '../shared/Card';
 import { Color } from '../variables';
+import { Grid } from '../shared/Grid';
 const { primary, accent } = Color;
 
 const Intro = () => {
@@ -28,18 +28,18 @@ const Intro = () => {
 				<SectionTitle>Hi there!</SectionTitle>
 				<StyledIntro>
 					<DefaultCard>
-						<FlexRow colGap='2rem' flex='auto'>
-							<div>
-								<InitialContent />
-								{!readMore && <MoreContent />}
-								<ButtonUnderline color={primary} onClick={HandleClick}>
-									Read {readMore ? 'more' : 'less'}
-								</ButtonUnderline>
-							</div>
+						<Grid>
 							<figure>
 								<img src={Img} alt='Miwa Kaur' />
 							</figure>
-						</FlexRow>
+							<InitialContent />
+							{!readMore && <MoreContent />}
+						</Grid>
+						<ButtonContainer justifyContent='flex-end'>
+							<ButtonUnderline color={primary} onClick={HandleClick}>
+								Read {readMore ? 'more' : 'less'}
+							</ButtonUnderline>
+						</ButtonContainer>
 						<Hr bgColor={accent} />
 						<p>Here are some of the technologies I use lately:</p>
 						<KeywordList>{keywords}</KeywordList>
