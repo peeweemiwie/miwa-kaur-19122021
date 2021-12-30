@@ -11,7 +11,7 @@ export const StyledLogo = styled.img`
 	position: absolute;
 	top: 50%;
 	transform: translate(1.6rem, -50%);
-	width: max(5vw, 6rem);
+	width: max(4vw, 6rem);
 `;
 
 export const StyledHeader = styled(Row)`
