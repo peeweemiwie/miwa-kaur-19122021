@@ -63,6 +63,16 @@ const Footer = () => {
 							</ButtonContainer>
 						</LinkButtonUnderline>
 					</div>
+					<div>
+						<AnchorButton
+							href='https://github.com/peeweemiwie/miwa-kaur-19122021'
+							target='_blank'
+							rel='noreferrer'
+							color={primary}
+						>
+							View code from GitHub <FaGithub />
+						</AnchorButton>
+					</div>
 				</Grid>
 				<small>Miwa Yagi Kaur - All rights reserved 2022</small>
 			</Container>
