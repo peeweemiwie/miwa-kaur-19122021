@@ -1,4 +1,4 @@
-import { AnchorButtonUnderline, LinkButtonUnderline } from '../shared/Buttons';
+import { AnchorButtonUnderline } from '../shared/Buttons';
 import { Color } from '../variables';
 const { primary } = Color;
 export const InitialContent = () => {
@@ -66,12 +66,6 @@ export const MoreContent = () => {
 				I am originally from Tokyo Japan and currently live in Long Island NY
 				with my husband who is from Punjab India. I also cohabit with a 7year
 				old rescued cat named Love.
-			</p>
-			<p>
-				Please feel free to say hi through{' '}
-				<LinkButtonUnderline to='contact' color={primary}>
-					contact form.
-				</LinkButtonUnderline>
 			</p>
 		</div>
 	);
