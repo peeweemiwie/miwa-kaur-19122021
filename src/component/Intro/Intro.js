@@ -46,7 +46,7 @@ const Intro = () => {
 						<Hr bgColor={accent} />
 						<ButtonContainer justifyContent='center'>
 							<LinkButtonOutline to='contact' color={primary}>
-								Contact
+								Please feel free to say hi!
 							</LinkButtonOutline>
 						</ButtonContainer>
 					</DefaultCard>
