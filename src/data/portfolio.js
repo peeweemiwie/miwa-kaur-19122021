@@ -77,7 +77,7 @@ export const DesignSystemArray = [
 
 export const DesignArray = [
 	{
-		title: 'E-commerce',
+		title: 'Adobe XD',
 		img: {
 			url: './images/D-MagnoliaDesktop.jpg',
 			alt: 'screenshot of e-commerce design',
@@ -93,7 +93,7 @@ export const DesignArray = [
 		},
 	},
 	{
-		title: 'Cookbook Mobile App',
+		title: 'Figma',
 		img: {
 			url: './images/D-cookbook.jpg',
 			alt: 'screenshot of cookbook mobile app',
