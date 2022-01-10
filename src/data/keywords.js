@@ -3,6 +3,7 @@ export const keywordsArray = [
 	'CSS3/SCSS',
 	'Javascript',
 	'React.js',
+	'Storybook',
 	'Styled-Components',
 	'Photoshop',
 	'Illustrator',
