@@ -7,6 +7,7 @@ export const AppArray = [
 		},
 		keywords: [
 			'React.js',
+			'Javascript',
 			'HTML5',
 			'CSS3/SCSS',
 			'API',
@@ -28,6 +29,7 @@ export const AppArray = [
 		},
 		keywords: [
 			'React.js',
+			'Javascript',
 			'HTML5',
 			'CSS3/SCSS',
 			'API',
@@ -38,6 +40,38 @@ export const AppArray = [
 		],
 		link: 'https://jolly-spence-f7cc72.netlify.app/',
 		github: 'https://github.com/peeweemiwie/weather-app-3.0',
+	},
+];
+
+export const DesignSystemArray = [
+	{
+		title: 'Storybook',
+		img: {
+			url: './images/DS-storybook.jpg',
+			alt: 'screenshot of storybook app',
+		},
+		keywords: [
+			'React.js',
+			'HTML5',
+			'CSS3/SCSS',
+			'Storybook',
+			'Styled-components',
+			'Javascript',
+			'GitHub',
+			'Netlify',
+		],
+		link: 'https://eloquent-montalcini-93e218.netlify.app/?path=/story/colors--color-swatch',
+		github: 'https://github.com/peeweemiwie/storybook',
+	},
+	{
+		title: 'SCSS Library',
+		img: {
+			url: './images/DS-sass.jpg',
+			alt: 'screenshot of sass design system app',
+		},
+		keywords: ['React.js', 'HTML5', 'CSS3/SCSS', 'GitHub', 'Netlify'],
+		link: 'https://sleepy-mayer-b04881.netlify.app',
+		github: 'https://github.com/peeweemiwie/sass-library',
 	},
 ];
 
