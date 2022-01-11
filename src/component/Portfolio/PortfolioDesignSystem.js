@@ -5,7 +5,11 @@ import { DesignSystemArray } from '../../data/portfolio';
 import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard } from '../shared/Card';
-import { AnchorButtonFilled, AnchorButtonOutline } from '../shared/Buttons';
+import {
+	AnchorButtonFilled,
+	AnchorButtonOutline,
+	LinkButtonUnderline,
+} from '../shared/Buttons';
 import { Color } from '../variables';
 const { primary, dark, accent } = Color;
 
@@ -62,6 +66,20 @@ const Portfolio = () => {
 		<Row>
 			<Container>
 				<SectionTitle>Portfolio - Design System</SectionTitle>
+				<StyledCard marginBottom='3rem'>
+					<p>
+						In the past, I used the CSS/classname approach, inspired by
+						Bootstrap, to create a library. However my preference now is{' '}
+						<strong>Component-Driven-Approach</strong>, using{' '}
+						<strong>Styled-Components</strong>. Why? I love the fact that it is{' '}
+						<strong>encapsulated styling, reusable, flexible</strong> and{' '}
+						<strong>clean code</strong>. Here are some examples I have created.
+						It is still very early stage but I would love to hear your
+						<LinkButtonUnderline to='contact' color={primary}>
+							feedback!
+						</LinkButtonUnderline>
+					</p>
+				</StyledCard>
 				<Grid>{cards}</Grid>
 			</Container>
 		</Row>
