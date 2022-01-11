@@ -8,8 +8,8 @@ const Home = () => {
 		<>
 			<Intro />
 			<Experience />
-			<Portfolio />
 			<PortfolioDesignSystem />
+			<Portfolio />
 			<PortfolioDesign />
 		</>
 	);
