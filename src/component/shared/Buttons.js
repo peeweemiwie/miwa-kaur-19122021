@@ -70,3 +70,7 @@ export const LinkButtonOutline = styled(LinkButton)`
 export const LinkButtonUnderline = styled(LinkButton)`
 	text-decoration: underline;
 `;
+
+export const LinkButtonText = styled(LinkButton)`
+	text-decoration: none;
+`;
