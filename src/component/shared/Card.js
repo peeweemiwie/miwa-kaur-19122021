@@ -14,6 +14,7 @@ export const DefaultCard = styled.div`
 	li {
 		font-weight: 200;
 	}
+	margin-bottom: ${({ marginBottom }) => marginBottom || 0};
 `;
 
 export const StyledCard = styled(DefaultCard)`
@@ -28,6 +29,10 @@ export const StyledCard = styled(DefaultCard)`
 	}
 	h5 {
 		font-weight: 300;
+	}
+	p {
+		font-size: 2rem;
+		line-height: 1.5;
 	}
 	figure {
 		border: 3px solid ${lightGray};
