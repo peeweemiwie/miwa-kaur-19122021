@@ -1,32 +1,28 @@
 import { Container } from '../shared/Wrapper';
-import { StyledHeader, StyledLogo } from './Header.styled';
-import { LinkButtonText } from '../shared/Buttons';
-import { Color } from '../variables';
-import { Grid } from '../shared/Grid';
-const { primary } = Color;
+import logo from '../../img/logo.svg';
+import {
+	StyledHeader,
+	StyledLogo,
+	StyledNav,
+	StyledNavLink,
+} from './Header.styled';
 
 const Header = () => {
 	return (
 		<StyledHeader>
 			<Container>
 				<header>
-					<StyledLogo src='./images/logo.svg' alt='Logo: Miwa Yagi Kaur' />
-					<h1>Miwa Yagi Kaur</h1>
+					<h1>
+						<StyledLogo src={logo} alt='Logo: Miwa Yagi Kaur' />
+						Miwa Yagi Kaur
+					</h1>
 					<h2>Design Technologist</h2>
 				</header>
-				<nav>
-					<Grid>
-						<LinkButtonText to='/' color={primary}>
-							Home
-						</LinkButtonText>
-						<LinkButtonText to='animation' color={primary}>
-							Animation
-						</LinkButtonText>
-						<LinkButtonText to='contact' color={primary}>
-							Contact
-						</LinkButtonText>
-					</Grid>
-				</nav>
+				<StyledNav>
+					<StyledNavLink to='/'>Home</StyledNavLink>
+					<StyledNavLink to='animation'>Animation</StyledNavLink>
+					<StyledNavLink to='contact'>Contact</StyledNavLink>
+				</StyledNav>
 			</Container>
 		</StyledHeader>
 	);
