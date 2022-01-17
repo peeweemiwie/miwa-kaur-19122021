@@ -19,6 +19,7 @@ export const DefaultCard = styled.div`
 
 export const StyledCard = styled(DefaultCard)`
 	min-width: ${({ minWidth }) => minWidth || 'auto'};
+	text-align: ${({ textAlign }) => textAlign || 'left'};
 	h4,
 	h5 {
 		font-size: ${fontReg};

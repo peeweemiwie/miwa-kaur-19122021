@@ -80,6 +80,7 @@ const Portfolio = () => {
 						</LinkButtonUnderline>
 					</p>
 				</StyledCard>
+				<Hr bgColor={primary} />
 				<Grid>{cards}</Grid>
 			</Container>
 		</Row>

@@ -7,6 +7,7 @@ import { StyledPage } from '../src/component/shared/Wrapper';
 import Home from '../src/component/Home/Home';
 import Footer from './component/Footer/Footer';
 import Contact from './component/Contact/Contact';
+import Animation from './component/Animation/Animation';
 import NotFound from './component/NotFound/NotFound';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
 					<main>
 						<Routes>
 							<Route path='/' element={<Home />} />
+							<Route path='animation' element={<Animation />} />
 							<Route path='contact' element={<Contact />} />
 							<Route path='*' element={<NotFound />} />
 						</Routes>
