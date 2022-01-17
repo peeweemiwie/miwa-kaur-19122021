@@ -1,15 +1,17 @@
 import styled from 'styled-components';
 import { Color } from '../variables';
-const { lightGray, gray, navy, darkGray } = Color;
+const { lightGray, gray, navy, black } = Color;
 
 export const Bubbles = styled.div`
 	background-color: ${gray};
+	background-image: linear-gradient(45deg, ${gray}, ${navy}, ${black});
+	background-size: 300%;
 	border: 5px solid gray;
 	height: auto;
 	overflow: hidden;
 	perspective: 800px;
 	transform-style: preserve-3d;
-	animation: bgColor 10s infinite;
+	animation: bgColor 3s infinite alternate;
 	&.paused {
 		animation-play-state: paused;
 		span:nth-of-type(4n + 1),
@@ -51,14 +53,11 @@ export const Bubbles = styled.div`
 	}
 
 	@keyframes bgColor {
-		0% {
-			background-color: ${gray};
+		from {
+			background-position: left;
 		}
-		33% {
-			background-color: ${navy};
-		}
-		66% {
-			background-color: ${darkGray};
+		to {
+			background-position: right;
 		}
 	}
 

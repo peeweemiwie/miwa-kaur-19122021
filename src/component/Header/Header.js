@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { Container } from '../shared/Wrapper';
 import logo from '../../img/logo.svg';
 import {
@@ -13,8 +14,10 @@ const Header = () => {
 			<Container>
 				<header>
 					<h1>
-						<StyledLogo src={logo} alt='Logo: Miwa Yagi Kaur' />
-						Miwa Yagi Kaur
+						<Link to='/'>
+							<StyledLogo src={logo} alt='Logo: Miwa Yagi Kaur' />
+							Miwa Yagi Kaur
+						</Link>
 					</h1>
 					<h2>Design Technologist</h2>
 				</header>

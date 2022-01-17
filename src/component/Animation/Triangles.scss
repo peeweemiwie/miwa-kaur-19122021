@@ -1,0 +1,22 @@
+.triangle-animation {
+	.running {
+		opacity: 0;
+		animation-play-state: running;
+		animation-name: opacity;
+		animation-duration: 0.5s;
+		animation-timing-function: ease-in;
+		animation-iteration-count: 1;
+		animation-fill-mode: forwards;
+	}
+	.paused {
+		animation-play-state: paused;
+	}
+	@keyframes opacity {
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+}

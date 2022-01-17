@@ -2,8 +2,9 @@ import { useState } from 'react';
 import { StyledPage } from './Page.styled';
 import { ButtonFilled } from '../shared/Buttons';
 import { Color } from '../variables';
+import { Grid } from '../shared/Grid';
 
-export const AnimatePage = ({ action }) => {
+const AnimatePage = ({ action }) => {
 	const [num, setNum] = useState(1);
 	const [animationName, setAnimationName] = useState('');
 
@@ -30,6 +31,12 @@ export const AnimatePage = ({ action }) => {
 	);
 };
 
-// export const AnimationPageExpand = () => {
-// 	return <PageExpand action='expands'></PageExpand>;
-// };
+export const AnimationPages = () => {
+	return (
+		<Grid>
+			<AnimatePage action='expands' />
+			<AnimatePage action='minimizes' />
+			<AnimatePage action='flips' />
+		</Grid>
+	);
+};

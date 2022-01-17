@@ -11,6 +11,7 @@ export const StyledPage = styled(StyledCard)`
 		animation: minimizes 1s ease-in-out forwards;
 	}
 	&.flips {
+		backface-visibility: hidden;
 		animation: flips 1s ease-in-out forwards;
 	}
 
@@ -23,15 +24,11 @@ export const StyledPage = styled(StyledCard)`
 			opacity: 0;
 		}
 		70% {
-			transform: scale3D(5, 5, 5);
-			opacity: 0;
-		}
-		80% {
-			transform: scale3D(1, 1, 1);
+			transform: scale3D(3, 3, 3);
 			opacity: 0;
 		}
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 	}
 	@keyframes minimizes {
@@ -46,33 +43,20 @@ export const StyledPage = styled(StyledCard)`
 			transform: scale(0, 0);
 			opacity: 0;
 		}
-		55% {
-			transform: scale(1, 1);
-			opacity: 0;
-		}
 		100% {
-			opacity: 1;
+			opacity: 0;
 		}
 	}
 
 	@keyframes flips {
-		0% {
-			transform: rotateX(0);
-			opacity: 1;
-		}
-		25% {
-			opacity: 0;
+		from {
+			transform: rotateY(0);
 		}
 		50% {
 			transform: rotateY(180deg);
-			opacity: 0;
 		}
-		55% {
-			transform: rotateX(0);
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
+		to {
+			transform: rotateY(0);
 		}
 	}
 `;

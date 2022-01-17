@@ -5,7 +5,7 @@ import { sharedStyle } from '../shared/Buttons';
 import { FontSize, FontFamily, Color } from '../variables';
 const { fontMd } = FontSize;
 const { Quicksand } = FontFamily;
-const { primary, accent } = Color;
+const { primary, blue, success } = Color;
 
 export const StyledLogo = styled.img`
 	grid-area: logo;
@@ -38,6 +38,7 @@ export const StyledHeader = styled(Row)`
 		);
 	}
 	header {
+		a,
 		h1,
 		h2 {
 			color: ${({ theme }) => theme.text};
@@ -51,6 +52,22 @@ export const StyledHeader = styled(Row)`
 
 		h2 {
 			font-size: ${fontMd};
+		}
+
+		a {
+			text-decoration: none;
+			img {
+				backface-visibility: hidden;
+				transform: rotateX(0);
+				transition: transform 1s ease-in-out;
+			}
+			&:hover {
+				img {
+					transform: rotateX(1turn);
+
+					/* transform: translate(2rem, 2rem); */
+				}
+			}
 		}
 	}
 `;
@@ -68,19 +85,22 @@ export const StyledNavLink = styled(NavLink)`
 	&.active {
 		position: relative;
 		&::after {
-			background: ${accent};
-			background: linear-gradient(
-				to right,
-				${accent} 25%,
-				${primary} 25%,
-				${primary} 75%,
-				${accent} 75%
-			);
+			animation: navBg 10s infinite alternate;
+			background-image: linear-gradient(45deg, ${primary}, ${blue}, ${success});
+			background-size: 300%;
 			bottom: -${activeBorderHeight};
 			content: '';
 			height: ${activeBorderHeight};
 			position: absolute;
 			width: 100%;
+		}
+	}
+	@keyframes navBg {
+		from {
+			background-position: left;
+		}
+		to {
+			background-position: right;
 		}
 	}
 `;

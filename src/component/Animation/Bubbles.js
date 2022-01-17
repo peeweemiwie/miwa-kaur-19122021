@@ -1,14 +1,12 @@
 import { useState } from 'react';
 import { StyledCard, CardTitle } from '../shared/Card';
-import { Bubbles } from './Animation.styled';
+import { Bubbles } from './Bubbles.styled';
 import { ButtonFilled } from '../shared/Buttons';
 import { DefaultFlexBox } from '../shared/Flex';
-import { FontSize, Color } from '../variables';
-const { fontMd } = FontSize;
-const { gray } = Color;
+import { Color } from '../variables';
 
 const AnimationBubbles = () => {
-	const [isRunning, setIsRunning] = useState(true);
+	const [isRunning, setIsRunning] = useState(false);
 	let ranNum = null;
 	const ranNumArray = [...Array(50).keys()].map((num) => {
 		ranNum = Math.floor(Math.random() * 100);
@@ -27,7 +25,7 @@ const AnimationBubbles = () => {
 		<StyledCard>
 			<DefaultFlexBox alignItems='center'>
 				<CardTitle>Bubbles</CardTitle>
-				<ButtonFilled onClick={handleClick} color={gray}>
+				<ButtonFilled onClick={handleClick} color={Color.gray}>
 					{isRunning ? 'Pause' : 'Run'} animation
 				</ButtonFilled>
 			</DefaultFlexBox>

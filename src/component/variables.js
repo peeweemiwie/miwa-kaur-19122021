@@ -21,6 +21,7 @@ export const Color = {
 	darkGray: '#202124',
 	cardBg: '#2b2b2b',
 	navy: '#031f41',
+	blue: '#004cff',
 };
 
 const baseFontSize = 1.6;
