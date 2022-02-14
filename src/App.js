@@ -9,7 +9,7 @@ import Footer from './component/Footer/Footer';
 import Contact from './component/Contact/Contact';
 import Animation from './component/Animation/Animation';
 import NotFound from './component/NotFound/NotFound';
-
+import BackToTop from './component/BackToTop/BackToTop';
 function App() {
 	return (
 		<BrowserRouter>
@@ -26,6 +26,7 @@ function App() {
 						</Routes>
 					</main>
 					<Footer />
+					<BackToTop />
 				</StyledPage>
 			</ThemeProvider>
 		</BrowserRouter>
