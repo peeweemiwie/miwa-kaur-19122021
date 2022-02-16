@@ -19,9 +19,10 @@ export const StyledHeader = styled(Row)`
 	background-color: ${({ theme }) => theme.cardBg};
 	margin: 0 auto;
 	padding: 1rem 0 ${activeBorderHeight};
-	position: relative;
+	position: fixed;
 	text-align: center;
 	width: 100vw;
+	z-index: 10;
 	&::after {
 		content: '';
 		display: block;

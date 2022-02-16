@@ -1,8 +1,8 @@
-import { useState } from 'react';
-import { StyledIntro } from './Intro.styled';
+import { useState, useEffect } from 'react';
+import { StyledIntro, StyledContainer } from './Intro.styled';
 import { InitialContent, MoreContent } from './Contents';
 import Img from '../../img/miwa2-bw-sq.jpg';
-import { ButtonContainer, Container, Row } from '../shared/Wrapper';
+import { ButtonContainer, Row } from '../shared/Wrapper';
 import { SectionTitle } from '../shared/Typography';
 import { keywordsArray } from '../../data/keywords';
 import { KeywordList } from '../shared/Lists';
@@ -22,9 +22,24 @@ const Intro = () => {
 		readMore ? setReadMore(false) : setReadMore(true);
 	};
 
+	let intro = document.querySelector('#intro');
+	const options = {
+		rootMargin: '-170px 0px 0px 0px',
+		threshold: 0,
+	};
+	const toggleStyle = entries => {
+		entries.forEach(entry => console.log(entry));
+	};
+	const observer = new IntersectionObserver(toggleStyle, options);
+
+	if (intro) observer.observe(intro);
+	useEffect(() => {
+		console.log(intro);
+	});
+
 	return (
 		<Row>
-			<Container>
+			<StyledContainer id='intro'>
 				<SectionTitle>Hi there!</SectionTitle>
 				<StyledIntro>
 					<DefaultCard>
@@ -51,7 +66,7 @@ const Intro = () => {
 						</ButtonContainer>
 					</DefaultCard>
 				</StyledIntro>
-			</Container>
+			</StyledContainer>
 		</Row>
 	);
 };
