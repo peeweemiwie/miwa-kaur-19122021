@@ -6,6 +6,7 @@ import { Hr } from '../shared/Hr';
 import { KeywordList } from '../shared/Lists';
 import { CardTitle, StyledCard, FigureHalf } from '../shared/Card';
 import { AnchorButtonFilled, AnchorButtonOutline } from '../shared/Buttons';
+import { ExcludeMobile, MobileOnly } from '../shared/Responsive';
 import { Color } from '../variables';
 const { primary, dark, accent } = Color;
 
@@ -14,9 +15,16 @@ const Portfolio = () => {
 		<StyledCard key={`portfolio${index}`}>
 			<CardTitle>{app.title}</CardTitle>
 			<Hr bgColor={accent} />
-			<FigureHalf>
-				<img src={`${app.img.url}`} alt={`${app.img.alt}`} />
-			</FigureHalf>
+			<ExcludeMobile>
+				<FigureHalf>
+					<img src={`${app.img.url}`} alt={`${app.img.alt}`} />
+				</FigureHalf>
+			</ExcludeMobile>
+			<MobileOnly>
+				<figure>
+					<img src={`${app.img.url}`} alt={`${app.img.alt}`} />
+				</figure>
+			</MobileOnly>
 			<Hr bgColor={accent} />
 			<h4>Technology used:</h4>
 			<KeywordList>
@@ -59,7 +67,7 @@ const Portfolio = () => {
 	));
 
 	return (
-		<Row id='portfolio'>
+		<Row>
 			<Container>
 				<SectionTitle>Portfolio - React Apps</SectionTitle>
 				<Grid>{cards}</Grid>
