@@ -1,27 +1,5 @@
 export const AppArray = [
 	{
-		title: 'Dictionary',
-		img: {
-			url: './images/A-dictionary.jpg',
-			alt: 'screenshot of dictionary app',
-		},
-		keywords: [
-			'React.js',
-			'Javascript',
-			'HTML5',
-			'CSS3/SCSS',
-			'API',
-			'Figma',
-			'RWD',
-			'GitHub',
-			'Netlify',
-		],
-		link: 'https://reverent-hermann-ecea09.netlify.app/?query=cat',
-		github: 'https://github.com/peeweemiwie/dictionary-3.0',
-		figma:
-			'https://www.figma.com/file/0bldeG8YXZynYDalarRIOo/dictionary?node-id=3%3A25',
-	},
-	{
 		title: 'Weather',
 		img: {
 			url: './images/A-weatherApp.jpg',

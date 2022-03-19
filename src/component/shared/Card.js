@@ -4,6 +4,7 @@ const { borderRadiusMd, borderRadiusXl } = BorderRadius;
 const { fontReg, fontLg } = FontSize;
 const { white, lightGray } = Color;
 export const CardTitle = styled.h4``;
+export const FigureHalf = styled.figure``;
 
 export const DefaultCard = styled.div`
 	background-color: ${({ theme }) => theme.cardBg};
@@ -41,6 +42,16 @@ export const StyledCard = styled(DefaultCard)`
 		margin: 0;
 		overflow: hidden;
 		width: 100%;
+		img {
+			max-width: 100%;
+		}
+	}
+	${FigureHalf} {
+		border: 3px solid ${lightGray};
+		border-radius: ${borderRadiusXl};
+		margin: 0 auto;
+		overflow: hidden;
+		width: 50%;
 		img {
 			max-width: 100%;
 		}
