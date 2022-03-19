@@ -100,7 +100,7 @@ export const DesignArray = [
 		},
 		keywords: ['Figma', 'Photoshop', 'Illustrator'],
 		link: {
-			url: 'https://www.figma.com/file/HzWjznkuqcqgxfW285O0EU/Chef-Recipe-App?node-id=0%3A1',
+			url: 'https://www.figma.com/proto/HzWjznkuqcqgxfW285O0EU/Chef-Recipe-App?page-id=0%3A1&node-id=0%3A1&viewport=241%2C48%2C0.31&scaling=scale-down&starting-point-node-id=2%3A1',
 			device: 'mobile',
 		},
 	},
